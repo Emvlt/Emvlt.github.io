@@ -1,0 +1,766 @@
+[
+    {
+        "country": "Afghanistan",
+        "yearly-average-temp": "12.60"
+    },
+    {
+        "country": "Albania",
+        "yearly-average-temp": "11.40"
+    },
+    {
+        "country": "Algeria",
+        "yearly-average-temp": "22.50"
+    },
+    {
+        "country": "Andorra",
+        "yearly-average-temp": "7.60"
+    },
+    {
+        "country": "Angola",
+        "yearly-average-temp": "21.55"
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "yearly-average-temp": "26"
+    },
+    {
+        "country": "Argentina",
+        "yearly-average-temp": "14.80"
+    },
+    {
+        "country": "Armenia",
+        "yearly-average-temp": "7.15"
+    },
+    {
+        "country": "Australia",
+        "yearly-average-temp": "21.65"
+    },
+    {
+        "country": "Austria",
+        "yearly-average-temp": "6.35"
+    },
+    {
+        "country": "Azerbaijan",
+        "yearly-average-temp": "11.95"
+    },
+    {
+        "country": "Bahamas",
+        "yearly-average-temp": "24.85"
+    },
+    {
+        "country": "Bahrain",
+        "yearly-average-temp": "27.15"
+    },
+    {
+        "country": "Bangladesh",
+        "yearly-average-temp": "25"
+    },
+    {
+        "country": "Barbados",
+        "yearly-average-temp": "26"
+    },
+    {
+        "country": "Belarus",
+        "yearly-average-temp": "6.15"
+    },
+    {
+        "country": "Belgium",
+        "yearly-average-temp": "9.55"
+    },
+    {
+        "country": "Belize",
+        "yearly-average-temp": "25.30"
+    },
+    {
+        "country": "Benin",
+        "yearly-average-temp": "27.55"
+    },
+    {
+        "country": "Bhutan",
+        "yearly-average-temp": "7.40"
+    },
+    {
+        "country": "Bolivia",
+        "yearly-average-temp": "21.55"
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "yearly-average-temp": "9.85"
+    },
+    {
+        "country": "Botswana",
+        "yearly-average-temp": "21.50"
+    },
+    {
+        "country": "Brazil",
+        "yearly-average-temp": "24.95"
+    },
+    {
+        "country": "Brunei",
+        "yearly-average-temp": "26.85"
+    },
+    {
+        "country": "Bulgaria",
+        "yearly-average-temp": "10.55"
+    },
+    {
+        "country": "Burkina Faso",
+        "yearly-average-temp": "28.25"
+    },
+    {
+        "country": "Burundi",
+        "yearly-average-temp": "19.80"
+    },
+    {
+        "country": "Cambodia",
+        "yearly-average-temp": "26.80"
+    },
+    {
+        "country": "Cameroon",
+        "yearly-average-temp": "24.60"
+    },
+    {
+        "country": "Canada",
+        "yearly-average-temp": "-5.35"
+    },
+    {
+        "country": "Cape Verde",
+        "yearly-average-temp": "23.30"
+    },
+    {
+        "country": "Central African Republic",
+        "yearly-average-temp": "24.90"
+    },
+    {
+        "country": "Chad",
+        "yearly-average-temp": "26.55"
+    },
+    {
+        "country": "Chile",
+        "yearly-average-temp": "8.45"
+    },
+    {
+        "country": "China",
+        "yearly-average-temp": "6.95"
+    },
+    {
+        "country": "Colombia",
+        "yearly-average-temp": "24.50"
+    },
+    {
+        "country": "Comoros",
+        "yearly-average-temp": "25.55"
+    },
+    {
+        "country": "Democratic Republic of the Congo",
+        "yearly-average-temp": "24"
+    },
+    {
+        "country": "Republic of the Congo",
+        "yearly-average-temp": "24.55"
+    },
+    {
+        "country": "Costa Rica",
+        "yearly-average-temp": "24.80"
+    },
+    {
+        "country": "Croatia",
+        "yearly-average-temp": "10.90"
+    },
+    {
+        "country": "Cuba",
+        "yearly-average-temp": "25.20"
+    },
+    {
+        "country": "Cyprus",
+        "yearly-average-temp": "18.45"
+    },
+    {
+        "country": "Czech Republic",
+        "yearly-average-temp": "7.55"
+    },
+    {
+        "country": "Denmark",
+        "yearly-average-temp": "7.50"
+    },
+    {
+        "country": "Djibouti",
+        "yearly-average-temp": "28"
+    },
+    {
+        "country": "Dominica",
+        "yearly-average-temp": "22.35"
+    },
+    {
+        "country": "Dominican Republic",
+        "yearly-average-temp": "24.55"
+    },
+    {
+        "country": "East Timor",
+        "yearly-average-temp": "25.25"
+    },
+    {
+        "country": "Ecuador",
+        "yearly-average-temp": "21.85"
+    },
+    {
+        "country": "Egypt",
+        "yearly-average-temp": "22.10"
+    },
+    {
+        "country": "El Salvador",
+        "yearly-average-temp": "24.45"
+    },
+    {
+        "country": "Equatorial Guinea",
+        "yearly-average-temp": "24.55"
+    },
+    {
+        "country": "Eritrea",
+        "yearly-average-temp": "25.50"
+    },
+    {
+        "country": "Estonia",
+        "yearly-average-temp": "5.10"
+    },
+    {
+        "country": "Ethiopia",
+        "yearly-average-temp": "22.20"
+    },
+    {
+        "country": "Fiji",
+        "yearly-average-temp": "24.40"
+    },
+    {
+        "country": "Finland",
+        "yearly-average-temp": "1.70"
+    },
+    {
+        "country": "France",
+        "yearly-average-temp": "10.70"
+    },
+    {
+        "country": "Gabon",
+        "yearly-average-temp": "25.05"
+    },
+    {
+        "country": "The Gambia",
+        "yearly-average-temp": "27.50"
+    },
+    {
+        "country": "Georgia ",
+        "yearly-average-temp": "5.80"
+    },
+    {
+        "country": "Germany",
+        "yearly-average-temp": "8.50"
+    },
+    {
+        "country": "Ghana",
+        "yearly-average-temp": "27.20"
+    },
+    {
+        "country": "Greece",
+        "yearly-average-temp": "15.40"
+    },
+    {
+        "country": "Grenada",
+        "yearly-average-temp": "26.65"
+    },
+    {
+        "country": "Guatemala",
+        "yearly-average-temp": "23.45"
+    },
+    {
+        "country": "Guinea",
+        "yearly-average-temp": "25.70"
+    },
+    {
+        "country": "Guinea-Bissau",
+        "yearly-average-temp": "26.75"
+    },
+    {
+        "country": "Guyana",
+        "yearly-average-temp": "26"
+    },
+    {
+        "country": "Haiti",
+        "yearly-average-temp": "24.90"
+    },
+    {
+        "country": "Honduras",
+        "yearly-average-temp": "23.50"
+    },
+    {
+        "country": "Hungary",
+        "yearly-average-temp": "9.75"
+    },
+    {
+        "country": "Iceland",
+        "yearly-average-temp": "1.75"
+    },
+    {
+        "country": "India",
+        "yearly-average-temp": "23.65"
+    },
+    {
+        "country": "Indonesia",
+        "yearly-average-temp": "25.85"
+    },
+    {
+        "country": "Iran",
+        "yearly-average-temp": "17.25"
+    },
+    {
+        "country": "Iraq",
+        "yearly-average-temp": "21.40"
+    },
+    {
+        "country": "Republic of Ireland",
+        "yearly-average-temp": "9.30"
+    },
+    {
+        "country": "Israel",
+        "yearly-average-temp": "19.20"
+    },
+    {
+        "country": "Italy",
+        "yearly-average-temp": "13.45"
+    },
+    {
+        "country": "Ivory Coast",
+        "yearly-average-temp": "26.35"
+    },
+    {
+        "country": "Jamaica",
+        "yearly-average-temp": "24.95"
+    },
+    {
+        "country": "Japan",
+        "yearly-average-temp": "11.15"
+    },
+    {
+        "country": "Jordan",
+        "yearly-average-temp": "18.30"
+    },
+    {
+        "country": "Kazakhstan",
+        "yearly-average-temp": "6.40"
+    },
+    {
+        "country": "Kenya",
+        "yearly-average-temp": "24.75"
+    },
+    {
+        "country": "Kiribati",
+        "yearly-average-temp": "28.20"
+    },
+    {
+        "country": "North Korea",
+        "yearly-average-temp": "5.70"
+    },
+    {
+        "country": "South Korea",
+        "yearly-average-temp": "11.50"
+    },
+    {
+        "country": "Kuwait",
+        "yearly-average-temp": "25.35"
+    },
+    {
+        "country": "Kyrgyzstan",
+        "yearly-average-temp": "1.55"
+    },
+    {
+        "country": "Laos",
+        "yearly-average-temp": "22.80"
+    },
+    {
+        "country": "Latvia",
+        "yearly-average-temp": "5.60"
+    },
+    {
+        "country": "Lebanon",
+        "yearly-average-temp": "16.40"
+    },
+    {
+        "country": "Lesotho",
+        "yearly-average-temp": "11.85"
+    },
+    {
+        "country": "Liberia",
+        "yearly-average-temp": "25.30"
+    },
+    {
+        "country": "Libya",
+        "yearly-average-temp": "21.80"
+    },
+    {
+        "country": "Liechtenstein",
+        "yearly-average-temp": "5.65"
+    },
+    {
+        "country": "Lithuania",
+        "yearly-average-temp": "6.20"
+    },
+    {
+        "country": "Luxembourg",
+        "yearly-average-temp": "8.65"
+    },
+    {
+        "country": "Republic of Macedonia",
+        "yearly-average-temp": "9.80"
+    },
+    {
+        "country": "Madagascar",
+        "yearly-average-temp": "22.65"
+    },
+    {
+        "country": "Malawi",
+        "yearly-average-temp": "21.90"
+    },
+    {
+        "country": "Malaysia",
+        "yearly-average-temp": "25.40"
+    },
+    {
+        "country": "Maldives",
+        "yearly-average-temp": "27.65"
+    },
+    {
+        "country": "Mali",
+        "yearly-average-temp": "28.25"
+    },
+    {
+        "country": "Malta",
+        "yearly-average-temp": "19.20"
+    },
+    {
+        "country": "Marshall Islands",
+        "yearly-average-temp": "27.40"
+    },
+    {
+        "country": "Mauritania",
+        "yearly-average-temp": "27.65"
+    },
+    {
+        "country": "Mauritius",
+        "yearly-average-temp": "22.40"
+    },
+    {
+        "country": "Mexico",
+        "yearly-average-temp": "21"
+    },
+    {
+        "country": "Federated States of Micronesia",
+        "yearly-average-temp": "25.85"
+    },
+    {
+        "country": "Moldova",
+        "yearly-average-temp": "9.45"
+    },
+    {
+        "country": "Monaco",
+        "yearly-average-temp": "13.55"
+    },
+    {
+        "country": "Mongolia",
+        "yearly-average-temp": "-0.70"
+    },
+    {
+        "country": "Montenegro",
+        "yearly-average-temp": "10.55"
+    },
+    {
+        "country": "Morocco",
+        "yearly-average-temp": "17.10"
+    },
+    {
+        "country": "Mozambique",
+        "yearly-average-temp": "23.80"
+    },
+    {
+        "country": "Myanmar",
+        "yearly-average-temp": "13.05"
+    },
+    {
+        "country": "Namibia",
+        "yearly-average-temp": "19.95"
+    },
+    {
+        "country": "Nepal",
+        "yearly-average-temp": "8.10"
+    },
+    {
+        "country": "Kingdom of the Netherlands",
+        "yearly-average-temp": "9.25"
+    },
+    {
+        "country": "New Zealand",
+        "yearly-average-temp": "10.55"
+    },
+    {
+        "country": "Nicaragua",
+        "yearly-average-temp": "24.90"
+    },
+    {
+        "country": "Niger",
+        "yearly-average-temp": "27.15"
+    },
+    {
+        "country": "Nigeria",
+        "yearly-average-temp": "26.80"
+    },
+    {
+        "country": "Norway",
+        "yearly-average-temp": "1.50"
+    },
+    {
+        "country": "Oman",
+        "yearly-average-temp": "25.60"
+    },
+    {
+        "country": "Pakistan",
+        "yearly-average-temp": "20.20"
+    },
+    {
+        "country": "Palau",
+        "yearly-average-temp": "27.60"
+    },
+    {
+        "country": "Panama",
+        "yearly-average-temp": "25.40"
+    },
+    {
+        "country": "Papua New Guinea",
+        "yearly-average-temp": "25.25"
+    },
+    {
+        "country": "Paraguay",
+        "yearly-average-temp": "23.55"
+    },
+    {
+        "country": "Peru",
+        "yearly-average-temp": "19.60"
+    },
+    {
+        "country": "Philippines",
+        "yearly-average-temp": "25.85"
+    },
+    {
+        "country": "Poland",
+        "yearly-average-temp": "7.85"
+    },
+    {
+        "country": "Portugal",
+        "yearly-average-temp": "15.15"
+    },
+    {
+        "country": "Qatar",
+        "yearly-average-temp": "27.15"
+    },
+    {
+        "country": "Romania",
+        "yearly-average-temp": "8.80"
+    },
+    {
+        "country": "Russia",
+        "yearly-average-temp": "-5.10"
+    },
+    {
+        "country": "Rwanda",
+        "yearly-average-temp": "17.85"
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "yearly-average-temp": "24.50"
+    },
+    {
+        "country": "Saint Lucia",
+        "yearly-average-temp": "25.50"
+    },
+    {
+        "country": "Saint Vincent and the Grenadines",
+        "yearly-average-temp": "26.80"
+    },
+    {
+        "country": "Samoa",
+        "yearly-average-temp": "26.70"
+    },
+    {
+        "country": "San Marino",
+        "yearly-average-temp": "11.85"
+    },
+    {
+        "country": "S\u00c3\u00a3o Tom\u00c3\u00a9 and Pr\u00c3\u00adncipe",
+        "yearly-average-temp": "23.75"
+    },
+    {
+        "country": "Saudi Arabia",
+        "yearly-average-temp": "24.65"
+    },
+    {
+        "country": "Senegal",
+        "yearly-average-temp": "27.85"
+    },
+    {
+        "country": "Serbia",
+        "yearly-average-temp": "10.55"
+    },
+    {
+        "country": "Seychelles",
+        "yearly-average-temp": "27.15"
+    },
+    {
+        "country": "Sierra Leone",
+        "yearly-average-temp": "26.05"
+    },
+    {
+        "country": "Singapore",
+        "yearly-average-temp": "26.45"
+    },
+    {
+        "country": "Slovakia",
+        "yearly-average-temp": "6.80"
+    },
+    {
+        "country": "Slovenia",
+        "yearly-average-temp": "8.90"
+    },
+    {
+        "country": "Solomon Islands",
+        "yearly-average-temp": "25.65"
+    },
+    {
+        "country": "Somalia",
+        "yearly-average-temp": "27.05"
+    },
+    {
+        "country": "South Africa",
+        "yearly-average-temp": "17.75"
+    },
+    {
+        "country": "Spain",
+        "yearly-average-temp": "13.30"
+    },
+    {
+        "country": "Sri Lanka",
+        "yearly-average-temp": "26.95"
+    },
+    {
+        "country": "Sudan",
+        "yearly-average-temp": "26.90"
+    },
+    {
+        "country": "Suriname",
+        "yearly-average-temp": "25.70"
+    },
+    {
+        "country": "Swaziland",
+        "yearly-average-temp": "21.40"
+    },
+    {
+        "country": "Sweden",
+        "yearly-average-temp": "2.10"
+    },
+    {
+        "country": "Switzerland",
+        "yearly-average-temp": "5.50"
+    },
+    {
+        "country": "Syria",
+        "yearly-average-temp": "17.75"
+    },
+    {
+        "country": "Tajikistan",
+        "yearly-average-temp": "2"
+    },
+    {
+        "country": "Tanzania",
+        "yearly-average-temp": "22.35"
+    },
+    {
+        "country": "Thailand",
+        "yearly-average-temp": "26.30"
+    },
+    {
+        "country": "Togo",
+        "yearly-average-temp": "27.15"
+    },
+    {
+        "country": "Tonga",
+        "yearly-average-temp": "25.25"
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "yearly-average-temp": "25.75"
+    },
+    {
+        "country": "Tunisia",
+        "yearly-average-temp": "19.20"
+    },
+    {
+        "country": "Turkey",
+        "yearly-average-temp": "11.10"
+    },
+    {
+        "country": "Turkmenistan",
+        "yearly-average-temp": "15.10"
+    },
+    {
+        "country": "Tuvalu",
+        "yearly-average-temp": "28"
+    },
+    {
+        "country": "Uganda",
+        "yearly-average-temp": "22.80"
+    },
+    {
+        "country": "Ukraine",
+        "yearly-average-temp": "8.30"
+    },
+    {
+        "country": "United Arab Emirates",
+        "yearly-average-temp": "27"
+    },
+    {
+        "country": "United Kingdom",
+        "yearly-average-temp": "8.45"
+    },
+    {
+        "country": "United States",
+        "yearly-average-temp": "8.55"
+    },
+    {
+        "country": "Uruguay",
+        "yearly-average-temp": "17.55"
+    },
+    {
+        "country": "Uzbekistan",
+        "yearly-average-temp": "12.05"
+    },
+    {
+        "country": "Vanuatu",
+        "yearly-average-temp": "23.95"
+    },
+    {
+        "country": "Venezuela",
+        "yearly-average-temp": "25.35"
+    },
+    {
+        "country": "Vietnam",
+        "yearly-average-temp": "24.45"
+    },
+    {
+        "country": "Yemen",
+        "yearly-average-temp": "23.85"
+    },
+    {
+        "country": "Zambia",
+        "yearly-average-temp": "21.40"
+    },
+    {
+        "country": "Zimbabwe",
+        "yearly-average-temp": "21"
+    }
+]
