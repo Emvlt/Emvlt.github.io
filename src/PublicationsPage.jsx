@@ -20,14 +20,14 @@ import {
 const SCHOLAR_DATA = {
   name: "Emilien Valat",
   title: "Researcher in Machine Learning and Computational Imaging",
-  institution: "KTH, Royal Institute of Technology",
-  location: "Sweden",
+  institution: "LFW",
+  location: "Warsaw",
   stats: {
     papers: "6",
-    citations:"31",
+    citations:"39",
     h_index:"3",
     focus: "Machine Learning and Computational Imaging",
-    lab: "KTH",
+    lab: "N/A",
     fields: ["Machine Learning", "Computer Vision", "Scientific Software Development", "Computed Tomography", "imaging"]
   },
   publications: [
@@ -187,10 +187,10 @@ export default function App() {
                     <MapPin size={14} className="text-blue-500" />
                     {SCHOLAR_DATA.location}
                   </div>
-                  <div className="flex items-center gap-1.5 text-sm text-slate-500">
+                  {/* <div className="flex items-center gap-1.5 text-sm text-slate-500">
                     <Award size={14} className="text-amber-500" />
                     {SCHOLAR_DATA.institution}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -210,13 +210,13 @@ export default function App() {
             value={SCHOLAR_DATA.stats.papers} 
             colorClass="bg-blue-600" 
           />
-          <MetricCard 
+          {/* <MetricCard 
             icon={Cpu} 
             label="Research Lab" 
             value={SCHOLAR_DATA.stats.lab} 
             subtext="Department of Mathematics"
             colorClass="bg-indigo-600" 
-          />
+          /> */}
           <MetricCard 
             icon={Database} 
             label="Expertise" 
