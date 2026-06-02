@@ -24,7 +24,7 @@ import {
 
 // --- STYLES ---
 // Shared class for inline links within text
-const linkStyles = "text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-2 transition-colors";
+const linkStyles = "text-blue-600 hover:text-blue-800 bright:text-blue-400 bright:hover:text-blue-300 underline underline-offset-2 transition-colors";
 
 // --- DATA ---
 // HOW TO UPDATE LINKS:
@@ -217,21 +217,21 @@ const RESUME_DATA = {
 // --- COMPONENTS ---
 
 const SectionHeader = ({ icon: Icon, title }) => (
-  <div className="flex items-center gap-2 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
-    <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-    <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100 uppercase tracking-wide">{title}</h2>
+  <div className="flex items-center gap-2 mb-4 border-b border-gray-200 bright:border-gray-700 pb-2">
+    <Icon className="w-5 h-5 text-blue-600 bright:text-blue-400" />
+    <h2 className="text-xl font-bold text-gray-800 bright:text-gray-100 uppercase tracking-wide">{title}</h2>
   </div>
 );
 
 const Tag = ({ children, className = "" }) => (
-  <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 ${className}`}>
+  <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 bright:bg-blue-900/30 bright:text-blue-300 ${className}`}>
     {children}
   </span>
 );
 
 const SkillGroup = ({ title, skills, icon: Icon }) => (
   <div className="mb-4">
-    <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-2">
+    <h3 className="text-sm font-semibold text-gray-500 bright:text-gray-400 mb-2 flex items-center gap-2">
       {Icon && <Icon className="w-4 h-4" />}
       {title}
     </h3>
@@ -239,7 +239,7 @@ const SkillGroup = ({ title, skills, icon: Icon }) => (
       {skills.map((skill) => (
         <span 
           key={skill} 
-          className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded text-sm hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default border border-gray-200 dark:border-gray-700"
+          className="px-3 py-1 bg-gray-100 bright:bg-gray-800 text-gray-700 bright:text-gray-300 rounded text-sm hover:bg-blue-50 bright:hover:bg-blue-900/20 hover:text-blue-600 bright:hover:text-blue-400 transition-colors cursor-default border border-gray-200 bright:border-gray-700"
         >
           {skill}
         </span>
@@ -249,18 +249,18 @@ const SkillGroup = ({ title, skills, icon: Icon }) => (
 );
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [brightMode, setbrightMode] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState("all");
 
   // Handle system preference on mount
   useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true);
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: bright)').matches) {
+      setbrightMode(true);
     }
   }, []);
 
-  const toggleTheme = () => setDarkMode(!darkMode);
+  const toggleTheme = () => setbrightMode(!brightMode);
 
   // Filter logic
   const filteredExperience = useMemo(() => {
@@ -308,14 +308,14 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${brightMode ? 'bright bg-slate-900' : 'bg-gray-50'}`}>
       <div className="max-w-7xl mx-auto p-4 md:p-8">
 
         {/* --- MAIN CV CARD --- */}
-        <div className="bg-white dark:bg-slate-800 shadow-xl rounded-xl overflow-hidden print:shadow-none print:rounded-none">
+        <div className="bg-white bright:bg-slate-800 shadow-xl rounded-xl overflow-hidden print:shadow-none print:rounded-none">
           
           {/* HEADER */}
-          <header className="bg-gradient-to-r from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 text-white p-8 md:p-12">
+          <header className="bg-gradient-to-r from-slate-900 to-slate-800 bright:from-slate-950 bright:to-slate-900 text-white p-8 md:p-12">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">{RESUME_DATA.header.name}</h1>
@@ -342,18 +342,18 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
             
             {/* SIDEBAR (Skills & Info) */}
-            <aside className="md:col-span-4 bg-gray-50 dark:bg-slate-800/50 p-6 md:p-8 border-r border-gray-100 dark:border-gray-700">
+            <aside className="md:col-span-4 bg-gray-50 bright:bg-slate-800/50 p-6 md:p-8 border-r border-gray-100 bright:border-gray-700">
               
               <div className="mb-8">
                 <SectionHeader icon={Terminal} title="Summary" />
-                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm text-gray-600 bright:text-gray-300 leading-relaxed">
                   {RESUME_DATA.summary}
                 </p>
               </div>
 
               <div className="mb-8">
                 <SectionHeader icon={Medal} title="Certifications" />
-                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm text-gray-600 bright:text-gray-300 leading-relaxed">
                   {RESUME_DATA.certifications.name}
                 </p>
               </div>
@@ -373,25 +373,25 @@ export default function App() {
                 <div className="space-y-2">
                   {RESUME_DATA.skills.languages.map(lang => (
                     <div key={lang.name} className="flex justify-between items-center text-sm">
-                      <span className="font-medium text-gray-700 dark:text-gray-300">{lang.name}</span>
-                      <span className="text-gray-500 dark:text-gray-500">{lang.level}</span>
+                      <span className="font-medium text-gray-700 bright:text-gray-300">{lang.name}</span>
+                      <span className="text-gray-500 bright:text-gray-500">{lang.level}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+              <div className="mt-8 pt-8 border-t border-gray-200 bright:border-gray-700">
               <h3 className="text-xs font-bold uppercase text-gray-400 mb-2">Interests</h3>
-              <div className="p-4 bg-white dark:bg-slate-700 rounded-lg shadow-sm border border-gray-100 dark:border-gray-600 space-y-4">
+              <div className="p-4 bg-white bright:bg-slate-700 rounded-lg shadow-sm border border-gray-100 bright:border-gray-600 space-y-4">
                 
                 <div>
-                  <h4 className="font-bold text-gray-800 dark:text-gray-200 text-sm">{RESUME_DATA.interests.writing.title}</h4>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{RESUME_DATA.interests.writing.desc}</p>
+                  <h4 className="font-bold text-gray-800 bright:text-gray-200 text-sm">{RESUME_DATA.interests.writing.title}</h4>
+                  <p className="text-xs text-gray-500 bright:text-gray-400 mt-1">{RESUME_DATA.interests.writing.desc}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-gray-800 dark:text-gray-200 text-sm">{RESUME_DATA.interests.GDG.title}</h4>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{RESUME_DATA.interests.GDG.desc}</p>
+                  <h4 className="font-bold text-gray-800 bright:text-gray-200 text-sm">{RESUME_DATA.interests.GDG.title}</h4>
+                  <p className="text-xs text-gray-500 bright:text-gray-400 mt-1">{RESUME_DATA.interests.GDG.desc}</p>
                 </div>
 
               </div>
@@ -407,29 +407,29 @@ export default function App() {
                 <SectionHeader icon={Briefcase} title="Experience" />
                 <div className="space-y-8 relative">
                   {/* Timeline Line */}
-                  <div className="absolute left-0 top-2 bottom-2 w-0.5 bg-gray-200 dark:bg-gray-700 hidden md:block"></div>
+                  <div className="absolute left-0 top-2 bottom-2 w-0.5 bg-gray-200 bright:bg-gray-700 hidden md:block"></div>
 
                   {filteredExperience.map((job) => (
                     <div key={job.id} className="relative md:pl-8 group">
                       {/* Timeline Dot */}
-                      <div className="absolute left-[-5px] top-2 w-3 h-3 rounded-full bg-blue-500 border-2 border-white dark:border-slate-800 hidden md:block group-hover:scale-125 transition-transform"></div>
+                      <div className="absolute left-[-5px] top-2 w-3 h-3 rounded-full bg-blue-500 border-2 border-white bright:border-slate-800 hidden md:block group-hover:scale-125 transition-transform"></div>
                       
                       <div className="flex flex-col sm:flex-row justify-between sm:items-baseline mb-2">
-                        <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        <h3 className="text-lg font-bold text-gray-900 bright:text-white group-hover:text-blue-600 bright:group-hover:text-blue-400 transition-colors">
                           {job.role}
                         </h3>
-                        <span className="text-sm font-medium text-blue-600 dark:text-blue-400 whitespace-nowrap">{job.period}</span>
+                        <span className="text-sm font-medium text-blue-600 bright:text-blue-400 whitespace-nowrap">{job.period}</span>
                       </div>
                       
-                      <div className="text-sm font-semibold text-gray-600 dark:text-gray-300 mb-3 flex items-center gap-1">
+                      <div className="text-sm font-semibold text-gray-600 bright:text-gray-300 mb-3 flex items-center gap-1">
                         {job.company} <span className="text-gray-400 font-normal mx-1">•</span> <span className="font-normal text-gray-500">{job.location}</span>
                       </div>
                       
-                      <p className="text-sm text-gray-600 dark:text-gray-300 italic mb-3">
+                      <p className="text-sm text-gray-600 bright:text-gray-300 italic mb-3">
                         {job.description}
                       </p>
 
-                      <ul className="list-disc list-outside ml-4 space-y-1.5 mb-4 text-sm text-gray-700 dark:text-gray-300 marker:text-blue-500">
+                      <ul className="list-disc list-outside ml-4 space-y-1.5 mb-4 text-sm text-gray-700 bright:text-gray-300 marker:text-blue-500">
                         {job.highlights.map((highlight, idx) => (
                           <li key={idx} className="pl-2">
                             {highlight}
@@ -453,17 +453,17 @@ export default function App() {
                   <SectionHeader icon={GraduationCap} title="Education" />
                   <div className="space-y-6">
                     {RESUME_DATA.education.map((edu, idx) => (
-                      <div key={idx} className="bg-gray-50 dark:bg-slate-700/30 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                      <div key={idx} className="bg-gray-50 bright:bg-slate-700/30 rounded-lg p-5 border border-gray-100 bright:border-gray-700">
                         <div className="flex flex-col sm:flex-row justify-between mb-2">
-                          <h3 className="font-bold text-gray-900 dark:text-gray-100">{edu.degree}</h3>
-                          <span className="text-sm text-gray-500 dark:text-gray-400">{edu.period}</span>
+                          <h3 className="font-bold text-gray-900 bright:text-gray-100">{edu.degree}</h3>
+                          <span className="text-sm text-gray-500 bright:text-gray-400">{edu.period}</span>
                         </div>
-                        <div className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">{edu.institution}, {edu.location}</div>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">{edu.details}</p>
+                        <div className="text-sm text-gray-700 bright:text-gray-300 font-medium mb-2">{edu.institution}, {edu.location}</div>
+                        <p className="text-sm text-gray-600 bright:text-gray-400">{edu.details}</p>
                         {edu.awards && (
-                          <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
+                          <div className="mt-2 pt-2 border-t border-gray-200 bright:border-gray-600">
                              {edu.awards.map((award, i) => (
-                               <div key={i} className="text-xs font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1">
+                               <div key={i} className="text-xs font-semibold text-blue-600 bright:text-blue-400 flex items-center gap-1">
                                  <span className="text-yellow-500">★</span> {award}
                                </div>
                              ))}
@@ -481,12 +481,12 @@ export default function App() {
                   <SectionHeader icon={Sprout} title="Projects" />
                   <div className="space-y-6">
                     {RESUME_DATA.projects.map((edu, idx) => (
-                      <div key={idx} className="bg-gray-50 dark:bg-slate-700/30 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                      <div key={idx} className="bg-gray-50 bright:bg-slate-700/30 rounded-lg p-5 border border-gray-100 bright:border-gray-700">
                         <div className="flex flex-col sm:flex-row justify-between mb-2">
-                          <h3 className="font-bold text-gray-900 dark:text-gray-100">{edu.name}</h3>
-                          <span className="text-sm text-gray-500 dark:text-gray-400">{edu.period}</span>
+                          <h3 className="font-bold text-gray-900 bright:text-gray-100">{edu.name}</h3>
+                          <span className="text-sm text-gray-500 bright:text-gray-400">{edu.period}</span>
                         </div>
-                        <ul className="list-disc list-outside ml-4 space-y-1.5 mb-4 text-sm text-gray-700 dark:text-gray-300 marker:text-blue-500">
+                        <ul className="list-disc list-outside ml-4 space-y-1.5 mb-4 text-sm text-gray-700 bright:text-gray-300 marker:text-blue-500">
                         {edu.highlights.map((highlight, idx) => (
                           <li key={idx} className="pl-2">
                             {highlight}
@@ -511,30 +511,30 @@ export default function App() {
 
                   <div className="grid gap-4">
                     {filteredPublications.map((pub, idx) => (
-                      <div key={idx} className="group p-4 border border-gray-100 dark:border-gray-700 rounded-lg hover:border-blue-200 dark:hover:border-blue-800 hover:shadow-md transition-all bg-white dark:bg-slate-800">
+                      <div key={idx} className="group p-4 border border-gray-100 bright:border-gray-700 rounded-lg hover:border-blue-200 bright:hover:border-blue-800 hover:shadow-md transition-all bg-white bright:bg-slate-800">
                         <div className="flex justify-between items-start gap-4">
                           <div className="flex-1">
                             <a 
                               href={`https://doi.org/${pub.doi}`} 
                               target="_blank" 
                               rel="noreferrer"
-                              className="font-bold text-gray-900 dark:text-gray-100 text-sm mb-1 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors block"
+                              className="font-bold text-gray-900 bright:text-gray-100 text-sm mb-1 hover:text-blue-600 bright:hover:text-blue-400 hover:underline transition-colors block"
                             >
                               {pub.title}
                             </a>
-                            <p className="text-xs text-gray-600 dark:text-gray-400 mb-1">
+                            <p className="text-xs text-gray-600 bright:text-gray-400 mb-1">
                               {pub.authors}
                             </p>
-                            <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500 dark:text-gray-500">
-                              <span className="font-medium text-gray-700 dark:text-gray-300">{pub.venue}</span>
+                            <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500 bright:text-gray-500">
+                              <span className="font-medium text-gray-700 bright:text-gray-300">{pub.venue}</span>
                               <span>•</span>
                               <span>{pub.date}</span>
-                              <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider ${pub.type === 'Pre-Print' ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300' : 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300'}`}>
+                              <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider ${pub.type === 'Pre-Print' ? 'bg-orange-100 text-orange-700 bright:bg-orange-900/30 bright:text-orange-300' : 'bg-green-100 text-green-700 bright:bg-green-900/30 bright:text-green-300'}`}>
                                 {pub.type}
                               </span>
                             </div>
                           </div>
-                          <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" title="Open DOI">
+                          <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-600 bright:hover:text-blue-400 transition-colors" title="Open DOI">
                             <ExternalLink className="w-4 h-4" />
                           </a>
                         </div>
