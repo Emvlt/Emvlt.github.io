@@ -15,8 +15,7 @@ const Home = () => {
              <span className="text-blue-600"> Emilien Valat</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Research Engineer in Machine Learning and Computational Imaging.
-            Focused on <span className="font-semibold text-slate-800">Geometric Deep Learning</span> and its applications.
+            Machine Learning Sotware Engineer.
           </p>
         </header>
 

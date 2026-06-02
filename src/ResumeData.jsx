@@ -16,7 +16,10 @@ import {
   Search,
   Beaker,
   GraduationCap,
-  Briefcase
+  Briefcase,
+  Sprout,
+  Medal,
+  Database,
 } from 'lucide-react';
 
 // --- STYLES ---
@@ -33,20 +36,21 @@ const linkStyles = "text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:ho
 const RESUME_DATA = {
   header: {
     name: "Emilien Valat",
-    title: "Computer Vision Engineer & ML Researcher",
-    location: "Pruszkow, Poland",
+    title: "Machine Learning Software Engineer",
+    location: "Warsaw, Poland",
     email: "emilienvalat@gmail.com",
     github: "Emvlt",
     githubUrl: "https://github.com/Emvlt",
     scholar: "Google Scholar",
     scholarUrl: "https://scholar.google.fr/citations?hl=en&user=kkSBGOUAAAAJ", 
-    lastUpdated: "Feb 2026"
+    lastUpdated: "June 2026"
   },
-  summary: "Machine Learning Researcher and Engineer with a PhD in Engineering and a Master Degree in Optics. I specialise in deep learning methods for computational imaging. I have a proven expertise in developing novel neural network architectures and training procedures, and contributing to open-source scientific software.",
+  summary: "Software Engineer and ML Researcher with a PhD in Engineering. Experienced in full-stack development, cloud deployments, and building robust ML infrastructure. Proven track record of improving system efficiency, implementing CI/CD pipelines, and writing production-ready code for complex algorithmic challenges.",
   skills: {
-    programming: ["Python", "PyTorch", "PyGeom", "NumPy", "SciPy", "OpenCV", "Pandas", "Git", "uv"],
-    cs: ["Imperative Programming", "Data Structures", "Functional Programming", "Algorithms"],
-    devops: ["Apptainer", "Docker", "GitHub Workflows", "DVC", "AWS"],
+    mlops: ["Apptainer", "Docker", "GitHub Workflows", "DVC", "AWS", "CI/CD", "GCP", "Railway"],
+    programming: ["Python", "NumPy", "SciPy", "Pandas", "FastAPI", "Pydantic", "Blender", "React", "JS API", "Git", "uv", "Go"],
+    databases: ["PostgreSQL", "SQLite", "SQLAlchemy", "SQLAlchemy", "MongoDB"],
+    ml: ["PyTorch", "PyGeom", "Gemini ADK", "Graph Neural Networks", "Transformers"],
     math: ["Discretization", "Calculus", "Optimisation", "Vector Calculus", "Statistics", "Linear Algebra"],
     languages: [
       { name: "English", level: "Fluent" },
@@ -54,6 +58,12 @@ const RESUME_DATA = {
       { name: "Polish", level: "Basics" }
     ]
   },
+  certifications: [
+    {
+      name: "AWS Certified Machine Learning Engineer - Associate",
+      link: "https://www.credly.com/badges/217132b9-b7e1-48b6-a79c-d3f822e9c785/public_url"
+    }
+  ],
   experience: [
     {
       id: "kth",
@@ -61,15 +71,16 @@ const RESUME_DATA = {
       company: "Kungliga Tekniska Högskolan, Dept. of Mathematics",
       location: "Stockholm, Sweden",
       period: "Feb 2024 – Feb 2026",
-      description: <>Research on geometric deep-learning for imaging and co-developer of <a href="https://github.com/odlgroup/odl" className={linkStyles} target="_blank" rel="noreferrer">ODL</a>.</>,
+      description: <>Research on deep-learning for computational imaging and co-developer of <a href="https://github.com/odlgroup/odl" className={linkStyles} target="_blank" rel="noreferrer">ODL</a>.</>,
       highlights: [
-        <>Created a geometry-aware neural network to increase robustness of tomographic imaging.</>,
-        <>Developed a self-supervised pretraining method to address data scarcity in ML for Tomography.</>,
-        <>Reverse-engineered the geometry of a tomographic scanner to use model-informed ML reconstruction.</>,
-        <>Defined and executed the roadmap to move ODL from NumPy-only to a multi computational-backend library (Python Array-API, DLPack).</>,
-        <>Automated testing, PyPi and documentation deployment with GitHub Workflows.</>,
-        <>Mentoring Master and PhD students on ODL development.</>
-      ],
+        <>Architected and led the migration of ODL to a scalable multi-backend system, shipping the first update in 7 years.</>,
+        <>Identified and resolved critical I/O bottlenecks by eliminating redundant CPU/GPU memory transfers, resulting in a 2.3x overall performance increase.</>,
+        <>Improved codebase testability and efficiency by designing automated CI/CD pipelines via GitHub Workflows. Established best practices for open-source contributions and automated documentation generation using ReadTheDocs.</>,
+        <>Managed technical integration and developed enterprise solutions with industrial stakeholders (SAAB, Microtec).</>,
+        <>Created the first <a href="https://arxiv.org/abs/2511.12730" className={linkStyles} target="_blank" rel="noreferrer">GNN-based approach for tomographic imaging</a>, dividing the memory usage by 1.2 and the training time by 2.5 while improving PSNR and SSIM by 10%.</>,
+        <>Reduced the need for labeled training data by 90% while maintaining 98% model performance for tomographic imaging by creating a <a href="https://www.aimsciences.org/article/doi/10.3934/ammc.2025012" className={linkStyles} target="_blank" rel="noreferrer">self-supervised pretraining scheme</a>.</>,
+        <>Mentored a team of five PhD students to contribute to the software architecture.</>
+      ], 
       tags: ["Python", "ODL", "Geometric DL", "CI/CD", "Mentorship"]
     },
     {
@@ -78,11 +89,11 @@ const RESUME_DATA = {
       company: "Cambridge University, Dept. of Applied Mathematics",
       location: "Cambridge, UK",
       period: "Jan 2023 – Jan 2024",
-      description: "Researching the joint training of reconstruction and segmentation neural networks for CT medical imaging.",
+      description: "Research on medical image segmentation and scientific software development.",
       highlights: [
-        <>Improved image segmentation model performance for low-dose CT using advanced joint-training techniques.</>,
-        <>Developed a physics-informed neural network for medical imaging (ovarian cancer nodule segmentation).</>,
-        <>Open source contributions to <a href="https://github.com/CERN/TIGRE" className={linkStyles} target="_blank" rel="noreferrer">TIGRE</a> and LION (PyTorch binders, dataloaders).</>
+        <>Engineered and optimized an end-to-end medical image segmentation pipeline, effectively processing a dataset of ~14K samples and improving overall performance by 25%.</>,
+        <>Collaborated with enterprise and clinical stakeholders (Siemens, Addenbrooke Hospital) to align technical requirements and integrate ML solutions into real-world systems.</>,
+        <>Wrote production-ready code and contributed core algorithmic features to major open-source AI and tomography libraries (<a href="https://github.com/CERN/TIGRE" className={linkStyles} target="_blank" rel="noreferrer">TIGRE</a>, <a href="https://github.com/CambridgeCIA/LION/tree/main" className={linkStyles} target="_blank" rel="noreferrer">LION</a>)</>
       ],
       tags: ["Medical Imaging", "PyTorch", "Physics-Informed NN", "Open Source"]
     },
@@ -94,11 +105,9 @@ const RESUME_DATA = {
       period: "July 2021 – Dec 2022",
       description: <>Computer Vision Scientist for the <a href="https://www.bristol.ac.uk/economics/research/impact-and-influence/mapping-history/" className={linkStyles} target="_blank" rel="noreferrer">MAPHIS</a> project.</>,
       highlights: [
-        <>Developed a synthetic data generation tool for data augmentation in a data-scarce environment.</>,
-        <>Defined, prepared and monitored data labelisation, curation and processing pipeline.</>,
-        <>Developed a CV algorithm to segment urban landscape features from handmade maps.</>,
-        <>Calculated commuting distances using A* pathfinding on extracted features.</>,
-        <>Wrote a raster algorithm to turn map image scans into Slippy Tile format for Leaflet integration.</>
+        <>Architected and deployed a full-stack web application (AWS, TypeScript, MongoDB) by leading and supervising a team of two interns, demonstrating technical leadership.</>,
+        <>Applied foundational ML concepts to deploy a computer vision segmentation algorithm, automating the analysis of unstructured data by processing ~5K historical documents.</>,
+        <>Designed scalable synthetic data pipelines to address severe class imbalances, ensuring high accuracy and reliability for downstream inference tasks.</>
       ],
       tags: ["Computer Vision", "Synthetic Data", "A* Pathfinding", "Data Curation"]
     }
@@ -118,6 +127,27 @@ const RESUME_DATA = {
       location: "Palaiseau, France",
       period: "Sept 2013 – June 2018",
       details: "Photonic Systems Engineering, Wave Physics, Light Electromagnetism, Signal Processing. Erasmus semester in Stuttgart. Internships at Naval Group and CEA."
+    }
+  ],
+  projects: [
+    {
+      name: "MOIRAI",
+      summary: "Full-Stack Cloud Application",
+      period: "Feb 2026 – Mar 2026",
+      highlights: [
+        <>Architected and deployed a full-stack, AI-powered web application on Google Cloud Platform and Railway using Docker and automated GitHub Actions CI/CD pipelines.</>,
+        <>Designed a scalable backend using FastAPI, Pydantic, and SQLAlchemy, seamlessly integrating Gemini APIs to automate complex text processing and sentiment analysis tasks.</>,
+        <>Engineered a custom vector database to efficiently process, store, and query ~1.3K complex data points extracted from 180 unstructured text sources.</>
+      ]
+    },
+    {
+      name: "PolyHex",
+      summary: "Machine Learning & Reinforcement Learning Library",
+      period: "Aug 2025 – Oct 2025",
+      highlights: [
+        <>Developed a custom software library from scratch to interface GNNs with reinforcement Learning environments.</>,
+        <>Designed complex data structures to handle processing on custom hexagonal grid topologies, demonstrating strong algorithmic and core computer science fundamentals.</>
+      ]
     }
   ],
   publications: [
@@ -174,7 +204,12 @@ const RESUME_DATA = {
     writing: {
       title: "The Beavers (Novel)",
       period: "Sept 2023 – Present",
-      desc: "Working towards a finished version of an anthropomorphic novel about beavers by 2026. Developed learned narration, story-telling and creative writing skills."
+      desc: "Authoring an anthropomorphic adventure novel exploring complex socioeconomic and political systems, demonstrating sustained commitment to a three-year creative project."
+    },
+    GDG: {
+      title: "GDG Warszawa",
+      period: "Mar 2026 – Present",
+      desc: "Keeping up with Google tech stack and participating in community events."
     }
   }
 };
@@ -275,56 +310,6 @@ export default function App() {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-slate-900' : 'bg-gray-50'}`}>
       <div className="max-w-7xl mx-auto p-4 md:p-8">
-        
-        {/* --- CONTROLS --- */}
-        <div className="flex justify-between items-center mb-8 print:hidden">
-          <div className="flex items-center gap-2 bg-white dark:bg-slate-800 p-1 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-            <button 
-              onClick={() => setActiveTab("all")}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${activeTab === 'all' ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-100' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700'}`}
-            >
-              Full View
-            </button>
-            <button 
-              onClick={() => setActiveTab("dev")}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${activeTab === 'dev' ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-100' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700'}`}
-            >
-              Dev Focused
-            </button>
-            <button 
-              onClick={() => setActiveTab("academic")}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${activeTab === 'academic' ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-100' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-700'}`}
-            >
-              Research Focused
-            </button>
-          </div>
-
-          <div className="flex gap-3">
-            <div className="relative hidden sm:block">
-              <Search className="absolute left-2.5 top-2.5 w-4 h-4 text-gray-400" />
-              <input 
-                type="text"
-                placeholder="Search keywords..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-9 pr-4 py-2 w-48 text-sm rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 outline-none"
-              />
-            </div>
-            <button 
-              onClick={handlePrint}
-              className="p-2 rounded-lg bg-white dark:bg-slate-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
-              title="Print CV"
-            >
-              <Download className="w-5 h-5" />
-            </button>
-            <button 
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-white dark:bg-slate-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
-            >
-              {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-          </div>
-        </div>
 
         {/* --- MAIN CV CARD --- */}
         <div className="bg-white dark:bg-slate-800 shadow-xl rounded-xl overflow-hidden print:shadow-none print:rounded-none">
@@ -366,25 +351,20 @@ export default function App() {
                 </p>
               </div>
 
+              <div className="mb-8">
+                <SectionHeader icon={Medal} title="Certifications" />
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {RESUME_DATA.certifications.name}
+                </p>
+              </div>
+
               {(activeTab === 'all' || activeTab === 'dev') && (
                 <div className="mb-8">
-                  <SectionHeader icon={Code} title="Tech Stack" />
-                  <SkillGroup title="Languages & Libs" skills={RESUME_DATA.skills.programming} icon={Code} />
-                  <SkillGroup title="DevOps & Cloud" skills={RESUME_DATA.skills.devops} icon={Layers} />
-                  <SkillGroup title="Computer Science" skills={RESUME_DATA.skills.cs} icon={Cpu} />
-                </div>
-              )}
-
-              {(activeTab === 'all' || activeTab === 'academic') && (
-                <div className="mb-8">
-                   <SectionHeader icon={Beaker} title="Mathematics" />
-                   <div className="flex flex-wrap gap-2">
-                    {RESUME_DATA.skills.math.map(m => (
-                       <span key={m} className="text-xs text-gray-600 dark:text-gray-400 bg-white dark:bg-slate-700 px-2 py-1 rounded border border-gray-200 dark:border-gray-600">
-                         {m}
-                       </span>
-                    ))}
-                   </div>
+                  <SectionHeader icon={Code} title="Tech Stack" />                  
+                  <SkillGroup title="MLOps & Infrastructure" skills={RESUME_DATA.skills.mlops} icon={Layers} />
+                  <SkillGroup title="Programming & Web" skills={RESUME_DATA.skills.programming} icon={Code} />
+                  <SkillGroup title="Databases" skills={RESUME_DATA.skills.databases} icon={Database} />
+                  <SkillGroup title="MMachine Learning & AI" skills={RESUME_DATA.skills.ml} icon={Layers} />
                 </div>
               )}
 
@@ -401,12 +381,21 @@ export default function App() {
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <h3 className="text-xs font-bold uppercase text-gray-400 mb-2">Interests</h3>
-                <div className="p-4 bg-white dark:bg-slate-700 rounded-lg shadow-sm border border-gray-100 dark:border-gray-600">
+              <h3 className="text-xs font-bold uppercase text-gray-400 mb-2">Interests</h3>
+              <div className="p-4 bg-white dark:bg-slate-700 rounded-lg shadow-sm border border-gray-100 dark:border-gray-600 space-y-4">
+                
+                <div>
                   <h4 className="font-bold text-gray-800 dark:text-gray-200 text-sm">{RESUME_DATA.interests.writing.title}</h4>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{RESUME_DATA.interests.writing.desc}</p>
                 </div>
+
+                <div>
+                  <h4 className="font-bold text-gray-800 dark:text-gray-200 text-sm">{RESUME_DATA.interests.GDG.title}</h4>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{RESUME_DATA.interests.GDG.desc}</p>
+                </div>
+
               </div>
+            </div>
 
             </aside>
 
@@ -419,10 +408,6 @@ export default function App() {
                 <div className="space-y-8 relative">
                   {/* Timeline Line */}
                   <div className="absolute left-0 top-2 bottom-2 w-0.5 bg-gray-200 dark:bg-gray-700 hidden md:block"></div>
-                  
-                  {filteredExperience.length === 0 && (
-                     <div className="text-gray-500 italic p-4">No positions found matching "{searchQuery}"</div>
-                  )}
 
                   {filteredExperience.map((job) => (
                     <div key={job.id} className="relative md:pl-8 group">
@@ -484,6 +469,31 @@ export default function App() {
                              ))}
                           </div>
                         )}
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* Projects */}
+              {(activeTab === 'all' || activeTab === 'academic') && (
+                <section className="mb-10 page-break-inside-avoid">
+                  <SectionHeader icon={Sprout} title="Projects" />
+                  <div className="space-y-6">
+                    {RESUME_DATA.projects.map((edu, idx) => (
+                      <div key={idx} className="bg-gray-50 dark:bg-slate-700/30 rounded-lg p-5 border border-gray-100 dark:border-gray-700">
+                        <div className="flex flex-col sm:flex-row justify-between mb-2">
+                          <h3 className="font-bold text-gray-900 dark:text-gray-100">{edu.name}</h3>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">{edu.period}</span>
+                        </div>
+                        <ul className="list-disc list-outside ml-4 space-y-1.5 mb-4 text-sm text-gray-700 dark:text-gray-300 marker:text-blue-500">
+                        {edu.highlights.map((highlight, idx) => (
+                          <li key={idx} className="pl-2">
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
+                        
                       </div>
                     ))}
                   </div>
