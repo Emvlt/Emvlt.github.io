@@ -81,7 +81,7 @@ const RESUME_DATA = {
         <>Reduced the need for labeled training data by 90% while maintaining 98% model performance for tomographic imaging by creating a <a href="https://www.aimsciences.org/article/doi/10.3934/ammc.2025012" className={linkStyles} target="_blank" rel="noreferrer">self-supervised pretraining scheme</a>.</>,
         <>Mentored a team of five PhD students to contribute to the software architecture.</>
       ], 
-      tags: ["Python", "ODL", "Geometric DL", "CI/CD", "Mentorship"]
+      tags: ["Software development", "Geometric DL", "MLOps", "Industry Collaboration", "Mentorship"]
     },
     {
       id: "cambridge",
@@ -109,7 +109,7 @@ const RESUME_DATA = {
         <>Applied foundational ML concepts to deploy a computer vision segmentation algorithm, automating the analysis of unstructured data by processing ~5K historical documents.</>,
         <>Designed scalable synthetic data pipelines to address severe class imbalances, ensuring high accuracy and reliability for downstream inference tasks.</>
       ],
-      tags: ["Computer Vision", "Synthetic Data", "A* Pathfinding", "Data Curation"]
+      tags: ["Computer Vision", "Synthetic Data Generation", "GeoSpatial AI", "Data Curation & ETL"]
     }
   ],
   education: [
@@ -353,9 +353,24 @@ export default function App() {
 
               <div className="mb-8">
                 <SectionHeader icon={Medal} title="Certifications" />
-                <p className="text-sm text-gray-600 bright:text-gray-300 leading-relaxed">
-                  {RESUME_DATA.certifications.name}
-                </p>
+                <div className="space-y-2">
+                  {RESUME_DATA.certifications.map((cert, index) => (
+                    <p key={index} className="text-sm text-gray-600 bright:text-gray-300 leading-relaxed">
+                      {cert.link ? (
+                        <a 
+                          href={cert.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="hover:underline text-blue-600 bright:text-blue-400"
+                        >
+                          {cert.name}
+                        </a>
+                      ) : (
+                        cert.name
+                      )}
+                    </p>
+                  ))}
+                </div>
               </div>
 
               {(activeTab === 'all' || activeTab === 'dev') && (
